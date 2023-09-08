@@ -3,7 +3,7 @@
 - с помощью RUN установить nginx
 - скопировать index.html в /usr/share/nginx/html/index.html с хоста в контейнер
 - скопировать vhost.conf в /etc/nginx/conf.d/vhost.conf с хоста в контейнер
- - вывесить порт 80 на 8080 хоста
+ - вывесить порт 80 контейнера на порт 8080 хоста
  - собрать image
  - запустить из него контейнер
  - скопировать index.html в папку /var/www/html на хосте, изменить в нем строку ```Hello everyone, This is running via Docker container``` на ```Hello everyone, This is running on host```
