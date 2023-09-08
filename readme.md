@@ -1,9 +1,11 @@
 1) Написать кастомный Dockerfile для nginx:
 базовый образ - debian
-с помощью RUN установить nginx
-скопировать index.html в /usr/share/nginx/html/index.html с хоста в контейнер
-скопировать vhost.conf в /etc/nginx/conf.d/vhost.conf с хоста в контейнер
-вывесить порт 80
+- с помощью RUN установить nginx
+- скопировать index.html в /usr/share/nginx/html/index.html с хоста в контейнер
+- скопировать vhost.conf в /etc/nginx/conf.d/vhost.conf с хоста в контейнер
+ - вывесить порт 80
+ - собрать image
+ - запустить из него контейнер
 Итоговый результат: команда
 ```
 curl 127.0.0.1:8080 
